@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+a 				  {   text-decoration: none;	}
+a:link 			 { 	 color: #222;	 }
+a:visited 		{	color: #222;	}
+a:hover 	   {   color: #333; 	}
+a:active 		{	color: #333;	 }
+img 			 {	 vertical-align: middle;		}
+ul 				   {   list-style: none;	}
+/* Reset 끝 */
+
+/* div#wrap 시작 */
+div#wrap {
+/*	border: 1px solid #000;*/
+	width: 1300px;
+	margin: 0px auto;
+}
+/* div#wrap 끝 */
+
+/* header#header 시작 */
+header#header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+/*	border: 1px solid #f00;*/
+	background-color: #fff
+}
+div#headerLogo {
+	width: 240px;
+	height: 55px;
+	text-align: center;
+	line-height: 70px;
+/*	border: 1px solid #000;*/
+}
+nav#gnb {
+	width: 900px;
+/*	border: 1px solid #000;*/
+	text-align: right;
+}
+nav#gnb ul {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 40px;
+}
+nav#gnb ul li {
+	float: left;
+	padding-right: 16px;
+}
+nav#gnb ul li a {
+	font-size: 13px;
+	color: #777;
+}
+nav#gnb ul li img {
+	margin-right: 10px;
+}
+/* header#header 시작 */
+
+/* main#main 시작 */
+main#main {
+	height: 1300px;
+/*	border: 1px solid #000;*/
+	display: flex;
+	justify-content: space-between;
+}
+
+	/* aside#aside 시작 */
+aside#aside {
+	width: 250px;
+/*	border: 1px solid #000;*/
+}
+div#searchinput {
+	position: relative;
+/*	border: 1px solid #f00;*/
+	margin-bottom: 10px;
+}
+div#searchinput input {
+	width: 230px;
+	padding: 6px 0px 6px 6px;
+	outline: none;
+	border: 1px solid #ccc;
+}
+div#searchinput img {
+/*	border: 1px solid #000;*/
+	position: absolute;
+	right: 25px;
+	top: 7px;
+}
+hr {
+	width: 230px;
+	border: 1px solid rgba(227, 227, 227, 0.82);
+}
+
+		/* div#asidegnb 시작 */
+
+nav#asidegnb {
+	width: 250px;
+/*	border: 1px solid #00f;*/
+}
+nav#asidegnb #asidemainMenu>li.mainLi>a {
+	color: #555;
+	font-size: 15px;
+	width: 230px;
+	font-weight: bold;
+/*	border: 1px solid #000;*/
+	padding: 10px 0;
+	display: inline-block;
+}
+nav#asidegnb #asidemainMenu>li.mainLi {
+	position: relative;
+}
+.mainLi:first-child img {
+/*	border: 1px solid #000;*/
+	position: absolute;
+	left: 45px;
+	top: 15px;
+}
+nav#asidegnb #asidemainMenu>li.mainLi:nth-child(3) {
+	position: relative;
+}
+li.mainLi:nth-child(3) img {
+	position: absolute;
+	left: 70px;
+	top: 15px;
+}
+ul.subMenu li.subLi a{
+	font-size: 13px;
+	width: 230px;
+/*	border: 1px solid #000;*/
+	padding: 7px 0;
+	display: inline-block;
+}
+ul.subMenu li.subLi a:hover {
+	font-weight: bold;
+}
+.mainLi:first-child ul.subMenu,
+.mainLi:nth-child(3) ul.subMenu {
+	display: none;
+}
+
+		/* div#asidegnb 끝 */
+
+		/* div#table 시작 */
+div#tableImg {
+	margin-top: 20px;
+}
+div#tableImg table {
+	width: 230px;
+	border-collapse: collapse;
+}
+div#tableImg td {
+	padding: 5px 5px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+		/* div#table 끝 */
+
+	/* aside#aside 시작 */
+
+	/* div#goods 시작 */
+div#goods {
+	width: 1000px;
+}
+
+div#slideshow {
+	overflow: hidden;
+}
+		/* 이미지 슬라이드 시작 */
+div#shuttleFrame {
+	width: 2100px;
+	height: 500px;
+/*	border: 3px solid #f00;*/
+}
+div#shuttleFrame a {
+	float: left;
+}
+		/* 이미지 슬라이드 끝 */
+
+		/* div#banner 시작 */
+div#banner {
+	width: 1000px;
+	margin-top: 30px;
+}
+		/* div#banner 끝 */
+
+		/* div#galleryTxt 시작 */
+div#galleryTxt {
+	font-size: 35px;
+	text-align: center;
+	padding: 50px 0;
+}
+		/* div#galleryTxt 끝 */
+
+		/* div#goodsGNB 시작 */
+#goodsGNB li {
+	float: left;
+}
+#goodsGNB li a {
+	width: 142px;
+	font-size: 14px;
+	border: 1px solid #eee;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0px;
+}
+#goodsGNB a#selected {
+background-color: #f4f4f4;
+}
+#goodsGNB li a:hover {
+	background-color: #f4f4f4;
+}
+		/* div#goodsGNB 끝 */
+
+		/* div#goodsGallery 시작 */
+div#goodsGallery {
+	margin-top: 70px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+div.galleryArticle {
+	width: 320px;
+}
+		/* div#goodsGallery 끝 */
+
+	/* div#goods 끝 */
+
+/* main#main 끝 */
+
+
+
+
+
+
+
